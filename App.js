@@ -9,8 +9,12 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, FlatList} from 'react-native';
 import Header from './src/components/Header';
+import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Root } from './src/config/router';
+import { SearchBar } from 'react-native-elements'
+
+//import { SearchBar } from 'react-native-elements'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',

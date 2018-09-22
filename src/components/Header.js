@@ -9,17 +9,20 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
-
+// import {
+//   createStackNavigator,
+// } from 'react-navigation';
 type Props = {};
 export default class Header extends Component<Props> {
   render() {
+    //const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Icon name='menu' size={30} color='white'/>
+        <Icon onPress={() =>navigate('Start')} name='home' size={30} color='white'/>
         <Text style={styles.title}>
-          Office Hours
+          Fix Your Trashy Site
         </Text>
-        <Icon name='menu' size={30} color='white'/>
+        <Icon name='menu' size={30} color='#44cde5'/>
       </View>
     );
   }
@@ -34,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     justifyContent:'space-between',
     alignItems:'flex-end',
-    backgroundColor:'blue'
+    backgroundColor:'#44cde5'
   },
   title:{
     color:'white',

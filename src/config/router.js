@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import { createStackNavigator } from 'react-navigation';
-
+import Start from '../screens/Start'
 import Home from '../screens/Home';
 import Screen2 from '../screens/Screen2'
 
 export const HomeStack = createStackNavigator({
+  Start: {
+    screen: Start,
+  },
   Home: {
     screen: Home,
   },
